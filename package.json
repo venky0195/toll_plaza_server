@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon ./app/server.js",
-    "dev": "nodemon --inspect ./app/server.js",
+    "start": "nodemon server.js",
+    "dev": "nodemon --inspect server.js",
     "lint": "eslint .",
     "test": "mocha"
   },

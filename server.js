@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const helmet = require('helmet');
 require('dotenv').config();// todo only for devlopment not for production 
-const logger = require('../app/middleware/logger');
+const logger = require('./app/middleware/logger');
 const app = express();
 
 
@@ -39,8 +39,8 @@ app.get('/', (_r, res) => {
 	res.status(200).send('Hello world');
 });
 
-require('./db/connection');
-const routes = require("./routes");
+require('./app/db/connection');
+const routes = require("./app/routes");
 app.use(`${process.env.APIVERSION}/`, routes);
 
 //defualt route
