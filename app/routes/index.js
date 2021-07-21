@@ -6,7 +6,7 @@ const {
   verifyId,
 } = require("../transaction");
 
-router.get("/verifyReceipt/:transactionId", verifyId, verifyReceipt);
-router.post("/add", verifyRequest, addTransaction);
+router.get("/transactions/:transactionId", verifyId, verifyReceipt);
+router.post("/transactions", verifyRequest, addTransaction);
 
 module.exports = router;

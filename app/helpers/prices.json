@@ -1,0 +1,17 @@
+[
+    {
+        "vehicleType": "Bike",
+        "oneWay": 100,
+        "twoWay": 200
+    },
+    {
+        "vehicleType": "Car",
+        "oneWay": 200,
+        "twoWay": 350
+    },
+    {
+        "vehicleType": "Truck",
+        "oneWay": 300,
+        "twoWay": 480
+    }
+]
